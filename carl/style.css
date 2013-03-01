@@ -1,0 +1,11 @@
+html {background:#000;}
+
+body > section {background:#000 url('gradient.png') repeat-x; height:580px; padding:20px 0 160px; position:relative; width:100%;}
+section section {margin:0 auto; width:1100px;}
+.bg-star {background:url('bg-star.png') no-repeat; float:left; height:514px; padding:50px 0 0 50px; width:524px;}
+.star {background:url('star.png') no-repeat; height:429px; position:relative; width:452px;}
+blockquote {color:#fff; float:right; font:30px/50px sans-serif; margin-top:160px; text-align:center; width:520px;}
+.bg {background:url('london.png') repeat-x; bottom:140px; height:139px; position:absolute; width:100%;}
+#carl {padding:10px 0 0 70px;}
+#mouth {left:231px; position:absolute; top:298px;}
+#mouth.open {top:320px;}

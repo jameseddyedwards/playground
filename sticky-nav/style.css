@@ -1,0 +1,18 @@
+.wrapper {margin:0 auto; width:900px;}
+nav {background:#848161; position:relative; width:928px; padding:2px; margin-left:-14px; border-top-left-radius:14px 7px; border-top-right-radius:14px 7px;}
+nav li {display: inline-block; list-style:none;}
+
+.nav-left,
+.nav-right {position:absolute; bottom:-14px; width:14px; height:14px; background:#848161;}
+.nav-left::after,
+.nav-right::after {content:''; position:absolute; width:66%; height:66%; background:#000;}
+
+.nav-left {left:0; border-bottom-left-radius:100% 50%;}
+.nav-right {right:0; border-bottom-right-radius:100% 50%;}
+.nav-left::after {right:0; border-top-left-radius:100% 50%; border-bottom-left-radius:100% 50%;}
+.nav-right::after {left:0; border-top-right-radius:100% 50%; border-bottom-left-radius:50% 100%;}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}

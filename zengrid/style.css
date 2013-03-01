@@ -1,0 +1,60 @@
+* {border:0; margin:0; padding:0;}
+* {display:block;}
+
+a img {border:0;}
+figure {position:relative;}
+figure img {width:100%;}
+
+.container {padding-left:20px; padding-right:20px;}
+.row {margin:0 auto; max-width:1140px; min-width:755px; overflow:hidden; width:100%;}
+
+.onecol,
+.twocol,
+.threecol,
+.fourcol,
+.fivecol,
+.sixcol,
+.sevencol,
+.eightcol,
+.ninecol,
+.tencol,
+.elevencol {float:left; margin-right:1%; min-height:1px;}
+
+.row .onecol {width:4.85%;}
+.row .twocol {width:13.45%;}
+.row .threecol {width:22.05%;}
+.row .fourcol {width:30.75%;}
+.row .fivecol {width:39.45%;}
+.row .sixcol {width:48%;}
+.row .sevencol {width:56.75%;}
+.row .eightcol {width:65.4%;}
+.row .ninecol {width:74.05%;}
+.row .tencol {width:82.7%;}
+.row .elevencol {width:91.35%;}
+.row .twelvecol {float:left; width:100%;}
+
+.last {margin-right:0px;}
+
+img, object, embed {max-width:100%;}
+img {height:auto;}
+
+@media only screen and (max-width: 1023px) {
+	body {font-size:0.8em; line-height:1.5em;}
+}
+
+@media handheld, only screen and (max-width: 767px) {
+	body {font-size:16px; webkit-text-size-adjust:none;}
+	.row, body, .container {margin-left:0px; margin-right:0px; min-width:0; padding-left:0px; padding-right:0px; width:100%;}
+	.row .onecol,
+	.row .twocol,
+	.row .threecol,
+	.row .fourcol,
+	.row .fivecol,
+	.row .sixcol,
+	.row .sevencol,
+	.row .eightcol,
+	.row .ninecol,
+	.row .tencol,
+	.row .elevencol,
+	.row .twelvecol {float:none; margin-left:0px; margin-right:0px; padding-left:20px; padding-right:20px; width:auto;}
+}
