@@ -1,4 +1,4 @@
 playground
 ==========
 
-An area where I can try new stuff
+A place where I can play...obvs!
