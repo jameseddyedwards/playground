@@ -1,0 +1,2 @@
+# myNewProject
+### a Sails application

@@ -1,0 +1,96 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>OC Staff.it</title>
+	<meta name="description" content="What's trending this Christmas?">
+	<meta name="author" content="James 'Eddy' Edwards">
+
+	<meta name="viewport" content="width=device-width">
+
+	<!-- Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/global.css">
+
+	<!-- Mustache Templates -->
+	<link href="js/templates/table.mustache" rel="template" id="template-table" />
+
+	<!-- JavaScript -->
+	<script src="js/libs/jquery-1.10.2.js"></script>
+	<script src="js/libs/jquery.sortable.min.js"></script>
+
+</head>
+<body>
+
+	<header>
+		<section>
+			<div class="row">
+				<div class="col twelve">
+					<h1>Staff<em>it</em></h1>
+				</div>
+			</div>
+		</section>
+	</header>
+
+	<section class="staff">
+		<div class="row">
+			<div class="col twelve">
+
+				<div class="buttons">
+					<a class="icon-table selected"></a>
+					<a class="icon-picture"></a>
+					<a class="icon-direction"></a>
+				</div>
+
+				<nav>
+					<ul class="clearfix">
+						<li data-id="table" class="icon-table">Table</li>
+						<li data-id="grid" class="icon-picture">Grid</li>
+						<li data-id="map" class="icon-direction">Map</li>
+					</ul>
+				</nav>
+
+				<div class="views">
+
+					<!-- Placeholder for Staff Table -->
+					<div id="table"></div>
+
+					<!-- Placeholder for Staff Grid -->
+					<div id="grid"></div>
+
+					<!-- Placeholder for Staff Map -->
+					<div id="map"></div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer 
+	<footer>
+		<section>
+			<div class="row">
+				<div class="col twelve">
+					<a href="/" class="logo">Logo</a>
+				</div>
+			</div>
+		</section>
+	</footer>
+	-->
+
+	<script src="js/libs/mustache.js"></script>
+	<script src="js/libs/chevron.js"></script>
+	<script src="js/libs/jquery.dataTables.min.js"></script>
+	<script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0&mkt=de-de" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/global.js"></script>
+</body>
+</html>
+

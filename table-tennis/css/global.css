@@ -1,0 +1,985 @@
+@charset "UTF-8";
+/* Imports */
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/* =============================================================================
+   HTML5 Boilerplate CSS:h5bp.com/css
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif;
+  color: #222; }
+
+body {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.4; }
+
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none; }
+
+a {
+  color: #00e; }
+
+a:visited {
+  color: #551a8b; }
+
+a:hover {
+  color: #06e; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: "";
+  content: none; }
+
+small {
+  font-size: 85%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+label {
+  cursor: pointer; }
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+  white-space: normal; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *width: 13px;
+  *height: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+input:invalid, textarea:invalid {
+  background-color: #f0dddd; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td {
+  vertical-align: top; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: black;
+  padding: 0.2em 0; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  /* Black prints faster:h5bp.com/s */
+  a, a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  /* h5bp.com/t */
+  tr, img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2, h3 {
+    page-break-after: avoid; } }
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'chunkfive';
+  src: url("../font/chunkfive/regular.eot");
+  src: url("../font/chunkfive/regular.eot?#iefix") format("embedded-opentype"), url("../font/chunkfive/regular.ttf") format("truetype"), url("../font/chunkfive/regular.svg#chunkfive") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #ededed;
+  font: 60px/68px 'chunkfive', Arial, sans-serif;
+  text-shadow: 0px 2px 1px black;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 50px;
+  margin: 20px 0 15px;
+  text-align: center; }
+
+h2 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  text-align: center; }
+
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/* =============================================================================
+   CSS3 Buttons
+   ========================================================================== */
+/* Buttons */
+.button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  min-width: 150px;
+  text-align: center;
+  text-decoration: none;
+  font: 14px/100% Arial, Helvetica, sans-serif;
+  padding: .5em 2em .55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  border-radius: .5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+
+.button:hover {
+  text-decoration: none; }
+
+.button:active {
+  position: relative;
+  top: 1px; }
+
+/* Button Colours */
+/* Orange */
+.orange {
+  color: #fef4e9;
+  border: solid 1px #da7c0c;
+  background: #f78d1d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+  background: -moz-linear-gradient(top, #faa51a, #f47a20);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20'); }
+
+.orange:hover {
+  background: #f47c20;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+  background: -moz-linear-gradient(top, #f88e11, #f06015);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015'); }
+
+.orange:active {
+  color: #fcd3a5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+  background: -moz-linear-gradient(top, #f47a20, #faa51a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a'); }
+
+/* blue */
+.blue {
+  color: #d9eef7;
+  border: solid 1px #0076a3;
+  background: #0095cd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+  background: -moz-linear-gradient(top, #00adee, #0078a5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5'); }
+
+.blue:hover {
+  background: #007ead;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+  background: -moz-linear-gradient(top, #0095cc, #00678e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e'); }
+
+.blue:active {
+  color: #80bed6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
+  background: -moz-linear-gradient(top, #0078a5, #00adee);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee'); }
+
+/* rosy */
+.rosy {
+  color: #fae7e9;
+  border: solid 1px #b73948;
+  background: #da5867;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f16c7c), to(#bf404f));
+  background: -moz-linear-gradient(top, #f16c7c, #bf404f);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16c7c', endColorstr='#bf404f'); }
+
+.rosy:hover {
+  background: #ba4b58;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cf5d6a), to(#a53845));
+  background: -moz-linear-gradient(top, #cf5d6a, #a53845);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf5d6a', endColorstr='#a53845'); }
+
+.rosy:active {
+  color: #dca4ab;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bf404f), to(#f16c7c));
+  background: -moz-linear-gradient(top, #bf404f, #f16c7c);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf404f', endColorstr='#f16c7c'); }
+
+/* green */
+.green {
+  color: #e8f0de;
+  border: solid 1px #538312;
+  background: #64991e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+  background: -moz-linear-gradient(top, #7db72f, #4e7d0e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e'); }
+
+.green:hover {
+  background: #538018;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+  background: -moz-linear-gradient(top, #6b9d28, #436b0c);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c'); }
+
+.green:active {
+  color: #a9c08c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+  background: -moz-linear-gradient(top, #4e7d0e, #7db72f);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e7d0e', endColorstr='#7db72f'); }
+
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/* Structure */
+/* Global */
+html {
+  height: 100%; }
+
+body {
+  background: #29282D;
+  color: #ededed;
+  font: 100 14px/1.5 "Open Sans", Helvetica, Arial, sans-serif;
+  height: 100%; }
+
+a:hover,
+a:link:hover {
+  cursor: pointer !important; }
+
+/*
+Defines the grid layout used for the sites CSS structure
+Page is our center aligned 95% width container. We have set it's 'position' as relative
+so that the Gridpak overlay will appear in the correct position. We have also updated
+the gridpak.js file to use '.block' as it's container.
+*/
+section {
+  margin: 0 auto;
+  max-width: 1040px;
+  position: relative; }
+
+/* Reusable column setup */
+.col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-left-width: 30px;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-clip: padding-box !important;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important; }
+
+.col a {
+  display: inline-block; }
+
+.col a img {
+  display: block; }
+
+.col a {
+  position: relative; }
+
+.row {
+  margin-left: -30px; }
+
+.one {
+  width: 8.33333333333%; }
+
+.two {
+  width: 16.6666666667%; }
+
+.three {
+  width: 25.0%; }
+
+.four {
+  width: 33.3333333333%; }
+
+.five {
+  width: 41.6666666667%; }
+
+.six {
+  width: 50.0%; }
+
+.seven {
+  width: 58.3333333333%; }
+
+.eight {
+  width: 66.6666666667%; }
+
+.nine {
+  width: 75.0%; }
+
+.ten {
+  width: 83.3333333333%; }
+
+.eleven {
+  width: 91.6666666667%; }
+
+.twelve {
+  width: 100%; }
+
+/* Mobile */
+@media screen and (min-width: 0px) and (max-width: 319px) {
+  section {
+    padding: 0 20px; }
+
+  .row {
+    margin-left: -12px; }
+
+  .col {
+    border-left-width: 12px;
+    padding: 0 12px; }
+
+  .one {
+    width: 50%; }
+
+  .two,
+  .col {
+    margin-left: 0;
+    width: 100%; } }
+/* Tablet */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  section {
+    padding: 0 30px; }
+
+  .col {
+    padding: 0 2%;
+    width: 100%; }
+
+  .row .col:first-child {
+    margin-left: 0; }
+
+  .one {
+    width: 15.0%; }
+
+  .two {
+    width: 32.0%; }
+
+  .three {
+    width: 49.0%; }
+
+  .four {
+    width: 100%; }
+
+  .five {
+    width: 100%; }
+
+  .six {
+    margin-left: 0;
+    width: 100%; } }
+/* Monitor */
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 61px; }
+
+  .row {
+    margin-left: -12px; }
+
+  .col {
+    border-left-width: 12px; }
+
+  .one {
+    width: 8.33333333333%; }
+
+  .two {
+    width: 16.6666666667%; }
+
+  .three {
+    width: 25.0%; }
+
+  .four {
+    width: 33.3333333333%; }
+
+  .five {
+    width: 41.6666666667%; }
+
+  .six {
+    width: 50.0%; }
+
+  .seven {
+    width: 58.3333333333%; }
+
+  .eight {
+    width: 66.6666666667%; }
+
+  .nine {
+    width: 75.0%; }
+
+  .ten {
+    width: 83.3333333333%; }
+
+  .eleven {
+    width: 91.6666666667%; }
+
+  .twelve {
+    margin-left: 0;
+    width: 100%; } }
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+  *line-height: 0; }
+
+.ir br {
+  display: none; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clear {
+  clear: both; }
+
+section:before, section:after,
+.row:before, .row:after,
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+section:after,
+.row:after,
+.clearfix:after {
+  clear: both; }
+
+section,
+.row,
+.clearfix {
+  *zoom: 1; }
+
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+/* Pendulum Animation */
+@-webkit-keyframes pendulum {
+  0% {
+    -webkit-transform: rotate(-5deg); }
+
+  50% {
+    -webkit-transform: rotate(5deg); }
+
+  100% {
+    -webkit-transform: rotate(-5deg); } }
+
+@-moz-keyframes pendulum {
+  0% {
+    -moz-transform: rotate(-5deg); }
+
+  50% {
+    -moz-transform: rotate(5deg); }
+
+  100% {
+    -moz-transform: rotate(-5deg); } }
+
+@-o-keyframes pendulum {
+  0% {
+    -o-transform: rotate(-5deg); }
+
+  50% {
+    -o-transform: rotate(5deg); }
+
+  100% {
+    -o-transform: rotate(-5deg); } }
+
+@keyframes pendulum {
+  0% {
+    transform: rotate(-5deg); }
+
+  50% {
+    transform: rotate(5deg); }
+
+  100% {
+    transform: rotate(-5deg); } }
+
+/*
+   Animation example, for spinners
+*/
+.animate-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block; }
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@font-face {
+  font-family: 'icons';
+  src: url("../font/icons/icons.eot?70292250");
+  src: url("../font/icons/icons.eot?70292250#iefix") format("embedded-opentype"), url("../font/icons/icons.woff?70292250") format("woff"), url("../font/icons/icons.ttf?70292250") format("truetype"), url("../font/icons/icons.svg?70292250#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?70292250#icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-move:before {
+  content: '\f047'; }
+
+/* '' */
+.icon-menu:before {
+  content: '\2630'; }
+
+/* '☰' */
+.icon-shuffle:before {
+  content: '🔀'; }
+
+/* '\1f500' */
+.icon-rss:before {
+  content: '\e73a'; }
+
+/* '' */
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+/* Base */
+/* Colour Palette */
+/* Vendor prefix */
+/* Text Shadow */
+h1 {
+  margin: 50px 0; }
+
+.ladders ul {
+  margin: 0;
+  padding: 0; }
+  .ladders ul li {
+    border: 1px solid grey;
+    cursor: move;
+    font-size: 30px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    position: relative; }
+    .ladders ul li:hover {
+      border: 1px dotted grey; }
+      .ladders ul li:hover:before {
+        color: white; }
+    .ladders ul li:before {
+      content: '\2630';
+      color: #666;
+      display: inline-block;
+      font-family: "icons";
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      line-height: 1em;
+      margin-right: .2em;
+      position: absolute;
+      right: 20px;
+      speak: none;
+      text-align: center;
+      text-decoration: inherit;
+      top: 20px;
+      width: 1em;
+      text-transform: none; }
+    .ladders ul li em {
+      font-weight: 800;
+      margin-right: 20px; }
+      .ladders ul li em:first {
+        font-size: 50px; }
+    .ladders ul li.add {
+      cursor: default; }
+      .ladders ul li.add:before {
+        content: ''; }
+      .ladders ul li.add:hover {
+        border: 1px solid grey; }
+
+/* Footer */
+footer {
+  padding: 30px 0; }
+  footer .col {
+    text-align: center; }
+    footer .col .logo {
+      display: inline-block; }
+      footer .col .logo img {
+        display: inline-block;
+        width: 50%; }

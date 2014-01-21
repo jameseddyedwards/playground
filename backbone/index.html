@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PayCircle </title>
+</head>
+<body>
+
+	<form action="/file-upload" id="my-awesome-dropzone" class="dropzone">
+		<input type="file" name="file" />
+  	</form>
+
+
+    <button id="add-friend">Add Friend</button>
+    <ul id="friends-list"></ul>
+
+    <div id="todo"></div>
+	<script type="text/template" id="item-template">
+		<div>
+			<input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
+			<%= title %>
+		</div>
+	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.4/underscore-min.js"></script>
+    <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script>
+    <script src="js/demo.js"></script>
+<script>
+
+var staff = [
+	{
+		name 	: "Eddy",
+		gender 	: "m",
+		age 	: 27,
+		mobile 	: "07737257063",
+		email 	: "jameseddyedwards@gmail.com",
+		address : ""
+	},
+	{
+		name 	: "Catherine",
+		gender 	: "f",
+		age 	: 30,
+		mobile 	: "07727638267",
+		email 	: "catherine@gmail.com",
+		address : ""
+	},
+	{
+		name 	: "Jamie",
+		gender 	: "m",
+		age 	: 32,
+		mobile 	: "08888888888",
+		email 	: "jamie@gmail.com",
+		address : ""
+	},
+];
+
+(function($) {
+	window.AppView = Backbone.View.extend({
+		el: $("body"),
+		events: {
+			"click #add-friend" : "showPrompt",
+		},
+		showPrompt: function () {
+			var friend_name = prompt("Who is your friend?");
+		}
+	});
+
+	var appview = new AppView;
+})(jQuery);
+</script>
+</body>
+</html>

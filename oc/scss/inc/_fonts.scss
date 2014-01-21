@@ -1,0 +1,39 @@
+@import 'inc/variables';
+
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+	color:$white;
+	text-shadow:0px 2px 1px black;
+	text-transform:uppercase;
+}
+
+h1 {
+	font-size:60px;
+	font-weight:100;
+	line-height:70px;
+	margin:50px 0 30px;
+	text-align:center;
+	em {
+		font-weight:800;
+		font-style:italic;
+	}
+}
+
+h2 {
+	font-size:20px;
+	margin:15px 0 10px;
+	text-align:center;
+}
+
+a {
+	color:$pink;
+	@include vendor(transition, color 300ms ease-in);
+
+	&:hover {
+		color:$white;
+	}
+}

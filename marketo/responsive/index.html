@@ -13,15 +13,18 @@
 <link rel="stylesheet" type="text/css" media="screen" href="http://lp.datasift.com/css/mktLPSupport.css" />
 <style type="text/css">
 
-#bodyId {margin:0px; padding:0px; text-align:center;}
+
+
+
+
+#bodyId {background:#EFEFEF url('http://lp.datasift.com/rs/datasift/images/datasift-logo-grey.png') no-repeat center 20px; padding-top:100px !important; margin:0px; padding:0px; text-align:center;}
 div#outerWrapDiv {height:100%; position:relative; width:100%;}
 div#innerWrapDiv {margin:0 auto; padding:0px; position:relative; text-align:left;}
-
-
-
-
+span.lpContentsItem p {margin:0 30px;}
+  
 
 /* CSS3 Buttons */
+  .button,
 .mktLblAbove li input[type="submit"],
 .mktLblAbove li input[type="reset"] {
 	outline: none;
@@ -51,6 +54,7 @@ div#innerWrapDiv {margin:0 auto; padding:0px; position:relative; text-align:left
 
 /* Button Colours */
 /* Orange */
+.button,
 .mktLblAbove li input[type="submit"] {
 	color:#fef4e9;
 	border:solid 1px #da7c0c;
@@ -64,9 +68,11 @@ div#innerWrapDiv {margin:0 auto; padding:0px; position:relative; text-align:left
 	background-image: linear-gradient(top, #faa51a, #f47a20);
 	text-shadow:1px 1px #bb6601;
 }
+.ltie9 .button,
 .ltie9 .mktLblAbove li input[type="submit"] {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
 }
+.button:hover,
 .mktLblAbove li input[type="submit"]:hover {
 	background:#fa9932;
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcae1b), color-stop(100%, #f88022));
@@ -77,6 +83,7 @@ div#innerWrapDiv {margin:0 auto; padding:0px; position:relative; text-align:left
 	background-image: linear-gradient(top, #fcae1b, #f88022);
 	text-shadow:1px 1px #aa5c00;
 }
+.ltie9 .button:hover,
 .ltie9 .mktLblAbove li input[type="submit"]:hover {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcae1b', endColorstr='#f88022');
 }
@@ -115,8 +122,7 @@ div#innerWrapDiv {margin:0 auto; padding:0px; position:relative; text-align:left
 
 
 
-
-
+.button {display:block; margin:20px;}
 div.cf_widget {display:block;}
 .cf_widget div {margin:0 auto;}
 .cf_widget_socialsignon {margin-bottom:20px;}
@@ -126,17 +132,17 @@ div.cf_widget {display:block;}
 .cf_sign_on_caption {font-size:16px; margin-bottom:20px !important; padding-top:20px !important; text-align:center;}
 .cf_sign_on_button {display:inline-block !important; float:none !important;}
 
+form.lpeRegForm ul.mktLblAbove li.mktFormReq label {background-position:right center !important; font-weight:normal; margin-right:20px; padding-right:0;}
 form.lpeRegForm .mktInput {padding-left:0 !important;}
-form.lpeRegForm ul.mktLblAbove label {color:#999; font-style:italic; padding-left:0;}
+form.lpeRegForm ul.mktLblAbove label {color:#999; font-style:italic; padding-left:0 !important;}
 
 .mktLblAbove {display:block; margin:0 2% !important; padding:0; width:96%;}
 .mktLblAbove li {list-style:none;}
 .mktLblAbove li label {display:block; margin-bottom:5px; width:100% !important;}
-.mktLblAbove li input[type="text"] {border:1px solid #ccc; box-sizing:border-box; display:block; font-size:20px !important; margin-bottom:5px; padding:10px 15px; width:100% !important;}
+.mktLblAbove li input[type="text"] {border:1px solid #bbb; box-sizing:border-box; color:#444 !important; display:block; font-size:20px !important; margin-bottom:5px; padding:10px 15px; width:100% !important;}
 
 .mktLblAbove li input[type="submit"] {display:block; width:100% !important;}
 .mktLblAbove li input[type="reset"] {display:block; width:100% !important;}
-
 
 
 
@@ -204,17 +210,8 @@ BODY#bodyId{width: auto; }</style><meta name="robots" content="index, nofollow" 
   
 <script type="text/javascript">
   var formEdit = false;
-
-  var socialSignOn = {
-    isEnabled: true,
-    enabledNetworks: ['linkedin', 'facebook', 'twitter'],
-    cfId: 'e5bbba0d14814d82998215f46dbc8d51',
-    codeSnippet: '<div class="cf_widgetLoader cf_w_e5bbba0d14814d82998215f46dbc8d51_SocialSignOn"></div>'
-  };
 </script>
 
-<div class='cf_widgetLoader cf_w_e5bbba0d14814d82998215f46dbc8d51_SocialSignOn'></div>
-<div style="width: 322px; margin: 15px 0; text-align: center; color: #8E8E8E;"><span style="border-bottom: 1px solid #CCC; width: 41%; display: inline-block; float: left; margin-top: 6px;"></span>OR<span style="border-bottom: 1px solid #CCC; width: 41%; display: inline-block; float: right; margin-top: 6px;"></span></div>  </div>
 <style type='text/css'>form.lpeRegForm ul {font-size: 16px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul input {font-size: 16px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul input[type='text'] {font-size: 16px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul textarea {font-size: 16px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm ul select {font-size: 16px; color: black; font-family: Arial, Helvetica, sans-serif; } form.lpeRegForm li {margin-bottom: 20px; } form.lpeRegForm .mktInput {padding-left: 10px; } form.lpeRegForm label {width: 300px; } form.lpeRegForm input.mktFormText {width: 300px; } form.lpeRegForm textarea {width: 300px; } form.lpeRegForm select {width: 304px; } </style><!--[if IE]><style type='text/css'>form.lpeRegForm li {margin-bottom: 18px; } form.lpeRegForm select {width: 306px; } </style><![endif]-->
 <script type="text/javascript">
 var profiling = {
@@ -227,21 +224,21 @@ var mktFormLanguage = 'English'
 <script type="text/javascript"> function mktoGetForm() {return document.getElementById('mktForm_1036'); }</script>
 <form class="lpeRegForm formNotEmpty" method="post" enctype="application/x-www-form-urlencoded" action="http://lp.datasift.com/index.php/leadCapture/save" id="mktForm_1036" name="mktForm_1036">
 	<ul class='mktLblAbove'>
-		<li class='mktField'>
+		<li class='mktFormReq mktField'>
 			<label>First Name:</label>
 			<span class='mktInput'>
 				<input class='mktFormText mktFormString' name="FirstName" id="FirstName" type='text' value=""  maxlength='255' tabIndex='1' />
 				<span class='mktFormMsg'></span>
 			</span>
 		</li>
-		<li class='mktField'>
+		<li class='mktFormReq mktField'>
 			<label>Last Name:</label>
 			<span class='mktInput'>
 				<input class='mktFormText mktFormString' name="LastName" id="LastName" type='text' value=""  maxlength='255' tabIndex='2' />
 				<span class='mktFormMsg'></span>
 			</span>
 		</li>
-		<li class='mktField'>
+		<li class='mktFormReq mktField'>
 			<label>Email Address:</label>
 			<span class='mktInput'>
 				<input class='mktFormText mktFormEmail' name="Email" id="Email" type='text' value=""  maxlength='255' tabIndex='3' />

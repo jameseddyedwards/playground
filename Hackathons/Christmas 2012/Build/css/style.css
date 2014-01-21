@@ -1,0 +1,128 @@
+/* Structure */
+body {color:#2C2C34; font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; margin:0;}
+
+h1,
+h2 {margin:0; padding-top:15px;}
+p {display:block; font-size:16px; line-height:26px; margin:0; max-width:980px;}
+
+section {margin:0 auto; position:relative; width:980px;}
+
+
+/* Header Bar */
+.candy-bar {background:url(../img/decoration-bar.png) repeat-x; height:89px; width:100%;}
+
+
+/* Intro */
+.intro {background:#001456 url(../img/intro-bg.png) no-repeat center top; height:870px; position:relative;}
+.intro h1 img {margin-left:-54px; margin-top:7px;}
+.intro .snowflakes {margin:0 auto; position:absolute; top:0; left:0;}
+.intro .snowflakes canvas {width:100%;}
+.intro .snow {background:url(../img/snow.png) no-repeat center; bottom:0; height:261px; position:absolute; width:100%;}
+.intro .snow p {left:0; position:absolute; top:196px;}
+.intro .container {max-width:1200px; margin:0 auto; position:relative;}
+.intro .denzel {position:absolute; left:-105px; top:-260px;}
+.gingerbreads {bottom:-180px; left:290px; position:absolute;}
+
+
+/* Cliches */
+.cliches {background:#eaf5ff url(../img/cliche-bg.png) repeat-x center -200px; height:750px; padding-bottom:100px;}
+.cliches h2 {padding-top:170px;}
+.cliches h2 img {margin-left:-50px;}
+.cliches p {margin-top:20px;}
+.icicles {background:url(../img/icicles.png) repeat-x top center; height:281px; width:100%;}
+
+
+/* Songs */
+.songs {background:url(../img/songs-bg.png) no-repeat top center; height:1283px; width:100%;}
+.songs .star {left:380px; position:absolute; top:110px;}
+.songs p {padding-top:1120px;}
+
+
+/* Movies */
+.movies {background:url(../img/top-10-movies.png) no-repeat top center; height:1380px;}
+.movies .star {left:240px; position:absolute; top:170px;}
+.movies p {color:#fff; padding-top:1215px;}
+
+
+/* Carousel */
+#wrapper {overflow:hidden; width:100%;}
+#carousel {padding-bottom:200px;}
+#carousel div {cursor:help; text-align:center; width:394px; height:350px; float:left; position:relative;}
+#carousel div img {border:none;}
+#carousel div span {display:none;}
+#carousel div:hover span {background-color:#333; color:#fff; font-size:14px; line-height:22px; display:inline-block; width:100px; padding:2px 10px; margin:0 0 0 -50px; position:absolute; bottom:30px; left:50%; border-radius:3px;}
+
+
+/* Footer */
+footer {color:#ededed; display:block; background:#29282D; font-size:13px; line-height:17px; width:100%; height:150px;}
+footer a {color:#E05048;}
+footer .wrapper { padding: 60px 50px 50px 50px; }
+footer .logo {background:url('../img/datasift-logo.png') no-repeat; display:block; float:left; height:50px; width:179px; margin-right:20px;}
+footer .copy {text-align:right;}
+
+/* Pendulum Animation */
+@-webkit-keyframes pendulum{
+	0% {-webkit-transform:rotate(-5deg);}
+	50% {-webkit-transform:rotate(5deg);}
+	100% {-webkit-transform:rotate(-5deg);}
+}
+@-moz-keyframes pendulum{
+	0% {-moz-transform:rotate(-5deg);}
+	50% {-moz-transform:rotate(5deg);}
+	100% {-moz-transform:rotate(-5deg);}
+}
+@-o-keyframes pendulum{
+	0% {-o-transform:rotate(-5deg);}
+	50% {-o-transform:rotate(5deg);}
+	100% {-o-transform:rotate(-5deg);}
+}
+@keyframes pendulum{
+	0% {transform:rotate(-5deg);}
+	50% {transform:rotate(5deg);}
+	100% {transform:rotate(-5deg);}
+}
+
+/* Spin Animation */
+@-webkit-keyframes spin{
+	0% {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes spin{
+	0% {-moz-transform:rotate(0deg);}
+	100% {-moz-transform:rotate(360deg);}
+}
+@-o-keyframes spin{
+	0% {-o-transform:rotate(0deg);}
+	100% {-o-transform:rotate(360deg);}
+}
+@keyframes spin{
+	0% {transform:rotate(0deg);}
+	100% {transform:rotate(360deg);}
+}
+
+.baubel {margin:0 auto;}
+.pendulum {
+	-webkit-animation: pendulum 3s ease-in-out infinite alternate;
+	-moz-animation: pendulum 3s ease-in-out infinite alternate;
+	-o-animation: pendulum 3s ease-in-out infinite alternate;
+	animation: pendulum 3s ease-in-out infinite alternate;
+}
+.spin {
+	-webkit-animation: spin 5s ease-in-out infinite alternate;
+	-moz-animation: spin 5s ease-in-out infinite alternate;
+	-o-animation: spin 5s ease-in-out infinite alternate;
+	animation: spin 5s ease-in-out infinite alternate;
+}
+.transform-center {
+	-webkit-transform-origin:center;   
+	-moz-transform-origin:center;   
+	-o-transform-origin:center;   
+	transform-origin:center;
+}
+.transform-top {
+	-webkit-transform-origin:top;   
+	-moz-transform-origin:top;   
+	-o-transform-origin:top;   
+	transform-origin:top;
+}
+

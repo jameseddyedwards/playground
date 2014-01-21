@@ -1,0 +1,27 @@
+<table class="staff" id="staff">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+    	{{#staff}}		
+	        <tr>
+	            <td>{{title}} {{forename}} {{surname}}</td>
+	            <td>{{gender}}</td>
+	            <td>{{age}}</td>
+	            <td>{{mobile}}</td>
+	            <td><a href="mailto:{{email}}">{{email}}</a></td>
+	            <td>{{address.line-1}}, {{address.postcode}}</td>
+	        </tr>
+    	{{/staff}}
+    </tbody>
+</table>
+
+
+

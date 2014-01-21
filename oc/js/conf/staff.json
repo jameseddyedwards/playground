@@ -1,0 +1,56 @@
+{
+	"staff": [
+		{
+	    	"title": "Mr",
+	    	"forename": "Eddy",
+	    	"surname": "Edwards",
+	    	"gender": "Male",
+	    	"dob": "1986-02-19",
+	    	"age": "27",
+	    	"mobile": "07737257063",
+	    	"email": "jameseddyedwards@gmail.com",
+	    	"height": "",
+	    	"shoe-size": "12",
+	    	"piercings": "",
+	    	"address": {
+	    		"line-1": "12 Ebborn Square",
+	    		"line-2": "Lower Earley",
+	    		"line-3": "",
+	    		"town": "Reading",
+	    		"county": "Berkshire",
+	    		"postcode": "RG6 4JT",
+	    		"coords": {
+	    			"x": 51.423805,
+	    			"y": -0.921676
+	    		}
+	    	},
+	    	"images": ["eddy"]
+	    },
+		{
+	    	"title": "Miss",
+	    	"forename": "Zoe",
+	    	"surname": "Morley",
+	    	"gender": "Female",
+	    	"dob": "1986-05-16",
+	    	"age": "27",
+	    	"mobile": "07737257063",
+	    	"email": "morleyzoe@hotmail.com",
+	    	"height": "",
+	    	"shoe-size": "6",
+	    	"piercings": "",
+	    	"address": {
+	    		"line-1": "12 Ebborn Square",
+	    		"line-2": "Lower Earley",
+	    		"line-3": "",
+	    		"town": "Reading",
+	    		"county": "Berkshire",
+	    		"postcode": "RG6 4JT",
+	    		"coords": {
+	    			"x": 41.8756,
+	    			"y": -87.9956
+	    		}
+	    	},
+	    	"images": ["zoe"]
+	    }
+	]
+}

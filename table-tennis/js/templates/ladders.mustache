@@ -1,0 +1,15 @@
+{{#ladders}}
+	<h1>{{title}}</h1>
+	<ul class="ladder" data-ladder-id="{{id}}">
+		{{#standings}}
+			<li data-player-name="{{name}}">
+				<em>{{position}}</em>{{name}}
+			</li>
+		{{/standings}}
+	</ul>
+	<ul>
+	  <li class="add">+ Add a new player</li>
+	</ul>
+{{/ladders}}
+
+

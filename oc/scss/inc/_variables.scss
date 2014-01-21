@@ -1,0 +1,35 @@
+/*==================================================*/
+/*  VARS
+/*==================================================*/
+
+/* Base */
+$font-family-default: 'Open Sans', Helvetica, Arial, sans-serif;
+$site-background: #393943;
+$site-color:#ededed;
+
+$border-color: #e5e5e5;
+
+/* Colour Palette */
+$white: #fff;
+$black: #000;
+$pink: #ee1098;
+$medium-grey: #ccc;
+$darker-grey: #29282D;
+$dark-grey: #29282D;
+
+/* Vendor prefix */
+@mixin vendor($property, $value...){
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}
+
+/* Text Shadow */
+@mixin text-shadow($property, $value...){
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+}

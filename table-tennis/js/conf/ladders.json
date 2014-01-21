@@ -1,0 +1,48 @@
+{
+    "ladders": [
+        {
+        	"id": "table-tennis",
+        	"title": "Table Tennis",
+			"standings": [
+				{
+					"name": "Eddy",
+					"position": 1
+				},
+				{
+					"name": "Adam",
+					"position": 2
+				},
+				{
+					"name": "Daniel",
+					"position": 3
+				},
+				{
+					"name": "Chris",
+					"position": 4
+				}
+	        ]
+	    },
+        {
+        	"id": "squash",
+        	"title": "Squash",
+			"standings": [
+				{
+					"name": "Bill",
+					"position": 1
+				},
+				{
+					"name": "Dave",
+					"position": 2
+				},
+				{
+					"name": "Steve",
+					"position": 3
+				},
+				{
+					"name": "Ted",
+					"position": 4
+				}
+	        ]
+	    }
+    ]
+}
